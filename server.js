@@ -14,6 +14,7 @@ app.use(morgan('dev'));
 
 // Routes
 app.use('/users', require('./routes/user'));
+app.use('/posts', require("./routes/post"));
 // DB Connection
 const connectDB = require('./config/db');
 connectDB();
